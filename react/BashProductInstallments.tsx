@@ -19,7 +19,7 @@ const BashProductInstallments: FC<BashProductInstallmentsProps> = ({
   message = 'or {installmentsNumber}x of {installmentsValue}',
   blockClass = '',
 }) => {
-  const handles = useCssHandles(CSS_HANDLES)
+  const { handles } = useCssHandles(CSS_HANDLES)
   const productContext = useBashProduct()
 
   const selectedItem = productContext?.selectedItem
