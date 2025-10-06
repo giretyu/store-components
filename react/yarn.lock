@@ -5072,13 +5072,9 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-"thefoschini.bash-product-context@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.0+build1759778796/public/@types/thefoschini.bash-product-context":
-  version "1.0.0"
-  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.0+build1759778796/public/@types/thefoschini.bash-product-context#c66a8551503d9297cdcb7549631f66c3f8ee4d69"
-
-"thefoschini.bash-store-components@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-store-components@1.0.0+build1759780115/public/@types/thefoschini.bash-store-components":
-  version "1.0.0"
-  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-store-components@1.0.0+build1759780115/public/@types/thefoschini.bash-store-components#29a358def5296af9fb5279a8556fd8d1f8f802a0"
+"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.2-beta.0/public/@types/thefoschini.bash-product-context":
+  version "1.0.2-beta.0"
+  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.2-beta.0/public/@types/thefoschini.bash-product-context#c62af3ad9a0f5f4d1cbf7fffbd29d2a209bca61a"
 
 throat@^5.0.0:
   version "5.0.0"
@@ -5388,9 +5384,9 @@ validate-npm-package-license@^3.0.1:
   version "0.23.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.23.1/public/@types/vtex.store-image#057991d97102568bcd7b1dadfd11e5e8ae6f2d98"
 
-"vtex.store-resources@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-resources@0.104.1/public/@types/vtex.store-resources":
-  version "0.104.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-resources@0.104.1/public/@types/vtex.store-resources#1fbe5dabdb8ec008ebd37db7da3294cfea083944"
+"vtex.store-resources@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-resources@0.104.2/public/@types/vtex.store-resources":
+  version "0.104.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-resources@0.104.2/public/@types/vtex.store-resources#fa9cba0928dee6d080f2e7625582963ea14cf6e8"
 
 "vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide":
   version "9.146.13"
