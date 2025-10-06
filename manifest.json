@@ -1,7 +1,7 @@
 {
   "vendor": "thefoschini",
   "name": "bash-store-components",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.2-beta.0",
   "title": "Bash Store Components",
   "defaultLocale": "pt-BR",
   "description": "The VTEX store components for that render apps can use",
@@ -38,7 +38,7 @@
     "vtex.store-resources": "0.x",
     "vtex.styleguide": "9.x"
   },
-    "scripts": {
+  "scripts": {
     "postreleasy": "vtex publish --verbose --force"
   },
   "settingsSchema": {
