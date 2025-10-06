@@ -25,7 +25,7 @@
     "vtex.order-manager": "0.x",
     "vtex.order-shipping": "0.x",
     "vtex.pixel-manager": "1.x",
-    "thefoschini.bash-product-context": "1.x",
+    "thefoschini.bash-product-context": "1.0.2-beta",
     "vtex.react-portal": "0.x",
     "vtex.responsive-values": "0.x",
     "vtex.rich-text": "0.x",
