@@ -12,7 +12,7 @@ import {
   useResponsiveValue,
   ResponsiveValuesTypes,
 } from 'vtex.responsive-values'
-import { useProduct, useProductDispatch } from 'vtex.product-context'
+import { useProduct, useProductDispatch } from 'thefoschini.bash-product-context'
 
 import SKUSelector, {
   ShowValueForVariation,

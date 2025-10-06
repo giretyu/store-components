@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import { ProductContext } from 'vtex.product-context'
+import { ProductContext } from 'thefoschini.bash-product-context'
+import { useBashProduct } from '../../BashProductDataProvider'
 import { path, isEmpty, has } from 'ramda'
 
 import { useCommercialOffer } from '../../utils/useCommercialOffer'
@@ -50,8 +51,16 @@ const ProductPriceWrapper = ({
   ...props
 }) => {
   const valuesFromContext = useContext(ProductContext)
+  const bashProductContext = useBashProduct()
+  
+  // Use bash context if available
+  const contextToUse = bashProductContext || valuesFromContext
+  
+  console.log('🚀 BASH PRODUCT PRICE - Debug Info')
+  console.log('BashProductContext:', bashProductContext)
+  console.log('Context to use:', contextToUse)
 
-  const commercialOffer = useCommercialOffer(valuesFromContext)
+  const commercialOffer = useCommercialOffer(contextToUse)
 
   const {
     className,

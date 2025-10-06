@@ -3,8 +3,8 @@ import type { FormEvent, ChangeEvent } from 'react'
 import { useIntl } from 'react-intl'
 import { useMutation } from 'react-apollo'
 import { Button, Input } from 'vtex.styleguide'
-import { useProduct } from 'vtex.product-context'
-import type { Seller } from 'vtex.product-context'
+import { useProduct } from 'thefoschini.bash-product-context'
+import type { Seller } from 'thefoschini.bash-product-context'
 
 import ADD_TO_AVAILABILITY_SUBSCRIBER_MUTATION from './graphql/addToAvailabilitySubscriberMutation.gql'
 import styles from './AvailabilitySubscriber.css'
@@ -53,10 +53,10 @@ function AvailabilitySubscriber(props: Props) {
 
   const intl = useIntl()
 
-  const seller = getDefaultSeller(productContext.selectedItem?.sellers)
+  const seller = getDefaultSeller(productContext?.selectedItem?.sellers)
 
   const available = props.available ?? isAvailable(seller?.commertialOffer)
-  const skuId = props.skuId ?? productContext.selectedItem?.itemId
+  const skuId = props.skuId ?? productContext?.selectedItem?.itemId
 
   // Render component only if the product is out of stock
   if (available || !skuId) {

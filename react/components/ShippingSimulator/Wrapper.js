@@ -5,7 +5,7 @@ import React, {
   useCallback,
   useRef,
 } from 'react'
-import { ProductContext } from 'vtex.product-context'
+import { ProductContext } from 'thefoschini.bash-product-context'
 import { useRuntime } from 'vtex.render-runtime'
 import { useApolloClient } from 'react-apollo'
 import { addValidation, removeValidation } from 'vtex.address-form/helpers'

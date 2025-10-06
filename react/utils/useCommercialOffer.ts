@@ -1,6 +1,6 @@
 import { useRuntime } from 'vtex.render-runtime'
 import { path } from 'ramda'
-import { ProductContextState } from 'vtex.product-context/react/ProductTypes'
+import { ProductContextState } from 'thefoschini.bash-product-context/react/ProductTypes'
 
 import { getDefaultSeller } from './sellers'
 

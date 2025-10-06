@@ -4,7 +4,7 @@ import { IOMessage } from 'vtex.native-types'
 import { SliderLayout } from 'vtex.slider-layout'
 import { findIndex, propEq } from 'ramda'
 import classnames from 'classnames'
-import { useProduct } from 'vtex.product-context'
+import { useProduct } from 'thefoschini.bash-product-context'
 import { ResponsiveValuesTypes } from 'vtex.responsive-values'
 
 import { stripUrl, isColor, slug } from '../utils'

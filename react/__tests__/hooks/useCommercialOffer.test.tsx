@@ -1,5 +1,5 @@
 import { renderHook } from '@vtex/test-tools/react'
-import { ProductContextState } from 'vtex.product-context/react/ProductTypes'
+import { ProductContextState } from 'thefoschini.bash-product-context/react/ProductTypes'
 
 import { useCommercialOffer } from '../../utils/useCommercialOffer'
 

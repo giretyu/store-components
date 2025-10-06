@@ -1,5 +1,5 @@
 import React, { useMemo, useEffect } from 'react'
-import { useProduct, useProductDispatch } from 'vtex.product-context'
+import { useProduct, useProductDispatch } from 'thefoschini.bash-product-context'
 import { pick } from 'ramda'
 import {
   useResponsiveValues,

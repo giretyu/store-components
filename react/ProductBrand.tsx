@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { useQuery } from 'react-apollo'
-import { useProduct } from 'vtex.product-context'
+import { useProduct } from 'thefoschini.bash-product-context'
+import { useBashProduct } from './BashProductDataProvider'
 import { useCssHandles } from 'vtex.css-handles'
 import type { CssHandlesTypes } from 'vtex.css-handles'
 
@@ -81,7 +82,17 @@ const useBrandInfoProps = (
   brandId: number | undefined
 ) => {
   const productContext = useProduct()
-  const product = productContext?.product
+  const bashProductContext = useBashProduct()
+  const product = bashProductContext?.product || productContext?.product
+
+  // 🚀 BASH COMPONENTS: Debug ProductBrand data
+  console.log('🚀 BASH PRODUCT BRAND - Debug Info')
+  console.log('ProductContext:', productContext)
+  console.log('BashProductContext:', bashProductContext)
+  console.log('Product:', product)
+  console.log('Props - brandName:', brandName, 'brandId:', brandId)
+  console.log('Product brand:', product?.brand)
+  console.log('Product brandId:', product?.brandId)
 
   if ((brandName && brandId) || !product) {
     return { brandName, brandId }

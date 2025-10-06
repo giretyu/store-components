@@ -1,110 +1,115 @@
 {
-  "logo": {
+  "bash-product-data-provider": {
+    "component": "BashProductDataProvider",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "bash-logo": {
     "component": "Logo"
   },
-  "search-bar": {
+  "bash-search-bar": {
     "component": "SearchBar",
-    "allowed": ["autocomplete-result-list", "icon-search", "icon-close"],
+    "allowed": ["bash-autocomplete-result-list", "icon-search", "icon-close"],
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/SearchBar"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/SearchBar"
     }
   },
-  "autocomplete-result-list": {
+  "bash-autocomplete-result-list": {
     "component": "AutocompleteResults"
   },
-  "buy-button": {
+  "bash-buy-button": {
     "component": "BuyButton"
   },
-  "product-name": {
+  "bash-product-name": {
     "component": "ProductName"
   },
-  "product-sku-attributes": {
+  "bash-product-sku-attributes": {
     "component": "ProductSKUAttributes"
   },
-  "product-brand": {
+  "bash-product-brand": {
     "component": "ProductBrand"
   },
-  "product-images": {
+  "bash-product-images": {
     "component": "ProductImages"
   },
-  "product-images.high-quality-image": {
+  "bash-product-images.high-quality-image": {
     "component": "HighQualityProductImage"
   },
-  "product-price": {
+  "bash-product-price": {
     "component": "ProductPrice",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/ProductPrice"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/ProductPrice"
     }
   },
-  "product-description": {
+  "bash-product-description": {
     "component": "ProductDescription",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/ProductDescription"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/ProductDescription"
     }
   },
-  "product-separator": {
+  "bash-product-separator": {
     "component": "ProductSeparator"
   },
-  "sku-selector": {
+  "bash-sku-selector": {
     "component": "SKUSelector",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/SKUSelector"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/SKUSelector"
     }
   },
-  "shipping-simulator": {
+  "bash-shipping-simulator": {
     "component": "ShippingSimulator"
   },
-  "share": {
+  "bash-share": {
     "component": "Share"
   },
-  "availability-subscriber": {
+  "bash-availability-subscriber": {
     "component": "AvailabilitySubscriber"
   },
-  "product-specifications": {
+  "bash-product-specifications": {
     "component": "ProductSpecifications"
   },
-  "product-highlights": {
+  "bash-product-highlights": {
     "component": "ProductHighlights"
   },
-  "info-card": {
+  "bash-info-card": {
     "component": "InfoCard",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/InfoCard"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/InfoCard"
     }
   },
-  "user-address": {
+  "bash-user-address": {
     "allowed": ["modal"],
     "component": "UserAddress"
   },
-  "product-services": {
+  "bash-product-services": {
     "component": "ProductServices"
   },
-  "newsletter": {
+  "bash-newsletter": {
     "component": "Newsletter",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/Newsletter"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/Newsletter"
     }
   },
-  "notification": {},
-  "notification.inline": {
+  "bash-notification": {},
+  "bash-notification.inline": {
     "component": "NotificationInline",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/NotificationBar"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/NotificationBar"
     }
   },
-  "notification.bar": {
+  "bash-notification.bar": {
     "component": "NotificationBar",
     "content": {
-      "$ref": "app:vtex.store-components#/definitions/NotificationBar"
+      "$ref": "app:thefoschini.bash-store-components#/definitions/NotificationBar"
     }
   },
-  "image": {
+  "bash-image": {
     "component": "Image",
     "content": {
       "$ref": "app:vtex.store-image#/definitions/Image"
     }
   },
-  "back-to-top-button": {
+  "bash-back-to-top-button": {
     "render": "client",
     "component": "BackToTopButton"
   }

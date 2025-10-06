@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from '@vtex/test-tools/react'
-import useProduct from 'vtex.product-context/useProduct'
+import useProduct from 'thefoschini.bash-product-context/useProduct'
 import { Modal } from 'vtex.modal-layout'
 
 import ProductImages from '../../ProductImages'

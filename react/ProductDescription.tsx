@@ -4,7 +4,8 @@ import { FormattedMessage, useIntl } from 'react-intl'
 import { useCssHandles } from 'vtex.css-handles'
 import type { CssHandlesTypes } from 'vtex.css-handles'
 import { formatIOMessage } from 'vtex.native-types'
-import { useProduct } from 'vtex.product-context'
+import { useProduct } from 'thefoschini.bash-product-context'
+import { useBashProduct } from './BashProductDataProvider'
 
 import { SanitizedHTML, DEFAULTS } from './components/SanitizedHTML'
 import GradientCollapse from './components/GradientCollapse'
@@ -56,7 +57,14 @@ const allowedAttributes = {
 function ProductDescription(props: PropsWithChildren<Props>) {
   const { handles } = useCssHandles(CSS_HANDLES, { classes: props.classes })
   const intl = useIntl()
-  const { product } = useProduct()
+  const productContext = useProduct()
+  const bashProductContext = useBashProduct()
+  const product = bashProductContext?.product || productContext?.product
+
+  console.log('🚀 BASH PRODUCT DESCRIPTION - Debug Info')
+  console.log('BashProductContext:', bashProductContext)
+  console.log('Product:', product)
+  console.log('Description:', product?.description)
 
   const description = props.description ?? product?.description
 

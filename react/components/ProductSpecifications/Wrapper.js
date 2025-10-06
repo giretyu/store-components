@@ -1,5 +1,5 @@
 import React from 'react'
-import useProduct from 'vtex.product-context/useProduct'
+import useProduct from 'thefoschini.bash-product-context/useProduct'
 import { isEmpty, propOr } from 'ramda'
 
 import ProductSpecifications from './index'

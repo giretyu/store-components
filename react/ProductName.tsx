@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { isEmpty } from 'ramda'
-import { useProduct } from 'vtex.product-context'
+import { useProduct } from 'thefoschini.bash-product-context'
+import { useBashProduct } from './BashProductDataProvider'
 import ContentLoader from 'react-content-loader'
 import { useCssHandles } from 'vtex.css-handles'
 import type { CssHandlesTypes } from 'vtex.css-handles'
@@ -208,12 +209,32 @@ function ProductName({
  */
 function ProductNameWrapper(props: Props) {
   const valuesFromContext = useProduct()
+  const bashProductContext = useBashProduct()
 
-  if (!valuesFromContext || isEmpty(valuesFromContext)) {
+  // Use bash context if available, otherwise fall back to regular context
+  const contextToUse = bashProductContext || valuesFromContext
+
+  // 🚀 BASH COMPONENTS: Console log complete product context for 404 fallback testing
+  console.log('🚀 BASH PRODUCT NAME - Debug Info')
+  console.log('ProductContext from bash-product-context:', valuesFromContext)
+  console.log('BashProductContext:', bashProductContext)
+  console.log('Context to use:', contextToUse)
+  console.log('isEmpty check:', isEmpty(contextToUse))
+  console.log('typeof contextToUse:', typeof contextToUse)
+  
+  if (contextToUse && !isEmpty(contextToUse)) {
+    console.log('🚀 BASH PRODUCT CONTEXT - Complete Structure')
+    console.log('Full Product Context:', JSON.stringify(contextToUse, null, 2))
+    console.log('Product:', contextToUse.product)
+    console.log('Selected Item:', contextToUse.selectedItem)
+    console.log('All Items:', contextToUse.product?.items)
+  }
+
+  if (!contextToUse || isEmpty(contextToUse)) {
     return <ProductName {...props} />
   }
 
-  const { product, selectedItem } = valuesFromContext
+  const { product, selectedItem } = contextToUse
 
   return (
     <ProductName

@@ -1,4 +1,4 @@
-import { Seller } from 'vtex.product-context'
+import { Seller } from 'thefoschini.bash-product-context'
 
 export function getDefaultSeller(sellers?: Seller[]) {
   if (!sellers || sellers.length === 0) {

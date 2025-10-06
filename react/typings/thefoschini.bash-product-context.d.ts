@@ -27,7 +27,6 @@ interface Product {
   skuSpecifications: SkuSpecification[]
   productName: string
   productReference: string
-  brand: string
   description: string
 }
 
@@ -46,12 +45,12 @@ interface SkuSpecificationValues {
   originalName: string
 }
 
-declare module 'vtex.product-context/ProductDispatchContext' {
+declare module 'thefoschini.bash-product-context/ProductDispatchContext' {
   type DispatchFunction = (payload: { type: string; args?: any }) => void
   export const useProductDispatch: () => DispatchFunction
 }
 
-declare module 'vtex.product-context' {
+declare module 'thefoschini.bash-product-context' {
   export interface Seller {
     sellerDefault: boolean
     commertialOffer: {

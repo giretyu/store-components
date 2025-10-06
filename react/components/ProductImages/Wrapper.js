@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
-import useProduct from 'vtex.product-context/useProduct'
+import useProduct from 'thefoschini.bash-product-context/useProduct'
+import { useBashProduct } from '../../BashProductDataProvider'
 import { useResponsiveValues } from 'vtex.responsive-values'
 import { path, pick } from 'ramda'
 
@@ -9,6 +10,17 @@ import { THUMBS_ORIENTATION, THUMBS_POSITION_HORIZONTAL } from './utils/enums'
 
 const ProductImagesWrapper = props => {
   const valuesFromContext = useProduct() || {}
+  const bashProductContext = useBashProduct()
+  
+  // Use bash context if available, otherwise fall back to regular context
+  const { selectedItem, skuSelector, product } = bashProductContext || valuesFromContext
+  
+  console.log('🚀 BASH PRODUCT IMAGES - Debug Info')
+  console.log('BashProductContext:', bashProductContext)
+  console.log('Product:', product)
+  console.log('SelectedItem:', selectedItem)
+  console.log('SelectedItem images:', selectedItem?.images)
+  
   const {
     aspectRatio,
     maxHeight,
@@ -29,8 +41,6 @@ const ProductImagesWrapper = props => {
       props
     )
   )
-
-  const { selectedItem, skuSelector, product } = valuesFromContext
 
   const images = useMemo(() => {
     if (props.images != null) {

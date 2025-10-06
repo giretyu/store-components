@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import type { CssHandlesTypes } from 'vtex.css-handles'
-import { useProduct } from 'vtex.product-context'
+import { useProduct } from 'thefoschini.bash-product-context'
 
 const CSS_HANDLES = [
   'productSKUAttributesContainer',

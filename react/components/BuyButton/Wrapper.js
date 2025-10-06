@@ -1,5 +1,5 @@
 import React from 'react'
-import useProduct from 'vtex.product-context/useProduct'
+import useProduct from 'thefoschini.bash-product-context/useProduct'
 import { path, isEmpty, compose } from 'ramda'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { withToast } from 'vtex.styleguide'
