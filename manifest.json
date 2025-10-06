@@ -38,6 +38,9 @@
     "vtex.store-resources": "0.x",
     "vtex.styleguide": "9.x"
   },
+    "scripts": {
+    "postreleasy": "vtex publish --verbose --force"
+  },
   "settingsSchema": {
     "title": "thefoschini.bash-store-components",
     "type": "object",
