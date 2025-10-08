@@ -5072,17 +5072,9 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-"thefoschini.bash-product-context@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.4+build1759897974/public/@types/thefoschini.bash-product-context":
-  version "1.0.4"
-  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.4+build1759897974/public/@types/thefoschini.bash-product-context#c73bc81c5f1f041e18db8b8e56231dfb07dcf6f8"
-
-"thefoschini.bash-store-components@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-store-components@1.0.5+build1759898079/public/@types/thefoschini.bash-store-components":
-  version "1.0.5"
-  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-store-components@1.0.5+build1759898079/public/@types/thefoschini.bash-store-components#fadaa77a325b1ee35428caa7d64ac92a7447b02b"
-
-"thefoschini.vtex-tfg-custom-components@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.vtex-tfg-custom-components@1.31.282-beta.0+build1759895605/public/@types/thefoschini.vtex-tfg-custom-components":
-  version "1.31.282-beta.0"
-  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.vtex-tfg-custom-components@1.31.282-beta.0+build1759895605/public/@types/thefoschini.vtex-tfg-custom-components#3df8f6bde9c215fbcfe67d257cff504b67ce3d05"
+"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.5-beta.0/public/@types/thefoschini.bash-product-context":
+  version "1.0.5-beta.0"
+  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.5-beta.0/public/@types/thefoschini.bash-product-context#88c5d783726462844ae168fadc80726ae69659cf"
 
 throat@^5.0.0:
   version "5.0.0"
