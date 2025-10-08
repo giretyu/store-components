@@ -5072,9 +5072,17 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.2-beta.0/public/@types/thefoschini.bash-product-context":
-  version "1.0.2-beta.0"
-  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.2-beta.0/public/@types/thefoschini.bash-product-context#c62af3ad9a0f5f4d1cbf7fffbd29d2a209bca61a"
+"thefoschini.bash-product-context@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.4+build1759897974/public/@types/thefoschini.bash-product-context":
+  version "1.0.4"
+  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.4+build1759897974/public/@types/thefoschini.bash-product-context#c73bc81c5f1f041e18db8b8e56231dfb07dcf6f8"
+
+"thefoschini.bash-store-components@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-store-components@1.0.5+build1759898079/public/@types/thefoschini.bash-store-components":
+  version "1.0.5"
+  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-store-components@1.0.5+build1759898079/public/@types/thefoschini.bash-store-components#fadaa77a325b1ee35428caa7d64ac92a7447b02b"
+
+"thefoschini.vtex-tfg-custom-components@https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.vtex-tfg-custom-components@1.31.282-beta.0+build1759895605/public/@types/thefoschini.vtex-tfg-custom-components":
+  version "1.31.282-beta.0"
+  resolved "https://testingws--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.vtex-tfg-custom-components@1.31.282-beta.0+build1759895605/public/@types/thefoschini.vtex-tfg-custom-components#3df8f6bde9c215fbcfe67d257cff504b67ce3d05"
 
 throat@^5.0.0:
   version "5.0.0"
@@ -5388,9 +5396,9 @@ validate-npm-package-license@^3.0.1:
   version "0.104.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-resources@0.104.2/public/@types/vtex.store-resources#fa9cba0928dee6d080f2e7625582963ea14cf6e8"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide":
-  version "9.146.13"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide#f4ccbc54621bf5114ddd115b6032ae320f2eba55"
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.14/public/@types/vtex.styleguide":
+  version "9.146.14"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.14/public/@types/vtex.styleguide#88ebb29e191a947a7be9f500814a7256297c7e60"
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"

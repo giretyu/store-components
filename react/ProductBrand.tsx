@@ -81,8 +81,8 @@ const useBrandInfoProps = (
   brandName: string | undefined,
   brandId: number | undefined
 ) => {
-  const productContext = useProduct()
-  const bashProductContext = useBashProduct()
+  const productContext = useProduct() as any
+  const bashProductContext = useBashProduct() as any
   const product = bashProductContext?.product || productContext?.product
 
   // 🚀 BASH COMPONENTS: Debug ProductBrand data

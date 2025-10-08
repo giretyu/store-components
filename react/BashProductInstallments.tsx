@@ -20,7 +20,7 @@ const BashProductInstallments: FC<BashProductInstallmentsProps> = ({
   blockClass = '',
 }) => {
   const { handles } = useCssHandles(CSS_HANDLES)
-  const productContext = useBashProduct()
+  const productContext = useBashProduct() as any
 
   const selectedItem = productContext?.selectedItem
   const installments = selectedItem?.sellers?.[0]?.commertialOffer?.Installments

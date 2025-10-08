@@ -57,8 +57,8 @@ const allowedAttributes = {
 function ProductDescription(props: PropsWithChildren<Props>) {
   const { handles } = useCssHandles(CSS_HANDLES, { classes: props.classes })
   const intl = useIntl()
-  const productContext = useProduct()
-  const bashProductContext = useBashProduct()
+  const productContext = useProduct() as any
+  const bashProductContext = useBashProduct() as any
   const product = bashProductContext?.product || productContext?.product
 
   console.log('🚀 BASH PRODUCT DESCRIPTION - Debug Info')

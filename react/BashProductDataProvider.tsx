@@ -1,113 +1,74 @@
-import React, { FC, useState, useEffect, createContext, useContext } from 'react'
-import { ProductContext } from 'thefoschini.bash-product-context'
+import React, { FC, useMemo } from 'react'
+import BashProductContextProvider from 'thefoschini.bash-product-context/BashProductContextProvider'
+import useProduct from 'thefoschini.bash-product-context/useProduct'
+import { useRuntime } from 'vtex.render-runtime'
 
 interface BashProductDataProviderProps {
   children: React.ReactNode
 }
 
-interface ApiResponse {
-  data: any[]
-  success: boolean
-}
-
-interface ProductContextValue {
-  product: any
-  selectedItem: any
-  selectedQuantity: number
-  skuSelector: {
-    isVisible: boolean
-    areAllVariationsSelected: boolean
-    selectedImageVariationSKU: string | null
-  }
-  buyButton: {
-    clicked: boolean
-  }
-  assemblyOptions: {
-    items: Record<string, any[]>
-    inputValues: Record<string, any>
-    areGroupsValid: Record<string, boolean>
-  }
-}
-
-const BashProductContext = createContext<ProductContextValue | undefined>(undefined)
-
-export const useBashProduct = () => useContext(BashProductContext)
-
 const API_BASE_URL = 'https://be1160c66d5b.ngrok-free.app'
-const HARDCODED_SLUG = 'ts-mens-summit-marathon-lime-run-jacket-130609adpq6'
+
+/**
+ * Extract product slug from URL path
+ * Handles patterns like: /product-slug/p or /product-slug-123/p
+ */
+const extractSlugFromPath = (path: string): string | null => {
+  // Match pattern: /anything/p where "anything" is the slug
+  const match = path.match(/\/([^/]+)\/p\/?$/)
+  return match ? match[1] : null
+}
 
 const BashProductDataProvider: FC<BashProductDataProviderProps> = ({ children }) => {
-  const [product, setProduct] = useState<any>(null)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    // Only fetch in browser, not during SSR
-    if (typeof window === 'undefined') {
-      console.log('🚀 BASH PRODUCT DATA PROVIDER: Skipping fetch - running on server')
-      setLoading(false)
-      return
+  const { query, route } = useRuntime()
+  
+  // Extract slug with priority: query param > URL path > route params
+  const productSlug = useMemo(() => {
+    // 1. Check for query parameter (for testing on 404 pages)
+    if (query?.slug && typeof query.slug === 'string') {
+      return query.slug
     }
 
-    console.log('🚀 BASH PRODUCT DATA PROVIDER: Fetching product...')
-    
-    const fetchProduct = async () => {
-      try {
-        const response = await fetch(`${API_BASE_URL}/v1/products/product/vtex/${HARDCODED_SLUG}`, {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        })
-        
-        const data: ApiResponse = await response.json()
-        console.log('🚀 BASH PRODUCT DATA PROVIDER: API Response:', data)
-        
-        if (data.success && data.data?.[0]) {
-          console.log('🚀 BASH PRODUCT DATA PROVIDER: Setting product:', data.data[0])
-          setProduct(data.data[0])
-        }
-      } catch (error) {
-        console.error('🚀 BASH PRODUCT DATA PROVIDER: Error:', error)
-      } finally {
-        setLoading(false)
+    // 2. Try to extract from URL path
+    if (route?.path) {
+      const slugFromPath = extractSlugFromPath(route.path)
+      if (slugFromPath) {
+        return slugFromPath
       }
     }
 
-    fetchProduct()
-  }, [])
+    // 3. Check route params (if VTEX provides slug in params)
+    if (route?.params?.slug) {
+      return route.params.slug
+    }
 
-  const contextValue: ProductContextValue = {
-    product,
-    selectedItem: product?.items?.[0] || null,
-    selectedQuantity: 1,
-    skuSelector: {
-      isVisible: true,
-      areAllVariationsSelected: false,
-      selectedImageVariationSKU: null,
-    },
-    buyButton: {
-      clicked: false,
-    },
-    assemblyOptions: {
-      items: {},
-      inputValues: {},
-      areGroupsValid: {},
-    },
+    return null
+  }, [query?.slug, route?.path, route?.params?.slug])
+
+  // Enable debug mode with ?debug=true
+  const isDebugMode = query?.debug === 'true' || query?.debug === '1'
+
+  if (isDebugMode) {
+    console.log('🚀 BASH PRODUCT DATA PROVIDER [DEBUG]:')
+    console.log('  - Query:', query)
+    console.log('  - Route:', route)
+    console.log('  - Extracted slug:', productSlug)
+    console.log('  - API URL:', API_BASE_URL)
   }
-
-  if (loading) {
-    console.log('🚀 BASH PRODUCT DATA PROVIDER: Loading...')
-    return <div>Loading product data...</div>
-  }
-
-  console.log('🚀 BASH PRODUCT DATA PROVIDER: Rendering with context:', contextValue)
 
   return (
-    <BashProductContext.Provider value={contextValue}>
-      <ProductContext.Provider value={contextValue}>
-        {children}
-      </ProductContext.Provider>
-    </BashProductContext.Provider>
+    <BashProductContextProvider 
+      productSlug={productSlug}
+      apiBaseUrl={API_BASE_URL}
+      query={query}
+      debug={isDebugMode}
+    >
+      {children}
+    </BashProductContextProvider>
   )
 }
+
+// Re-export the useProduct hook from bash-product-context as useBashProduct
+export const useBashProduct = useProduct
 
 export default BashProductDataProvider
