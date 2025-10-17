@@ -5072,13 +5072,9 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-"thefoschini.bash-product-context@https://pdptesting--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.5+build1760662431/public/@types/thefoschini.bash-product-context":
-  version "1.0.5"
-  resolved "https://pdptesting--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.5+build1760662431/public/@types/thefoschini.bash-product-context#a2dfa883fa90a87b29c81ae7f79800696d8c7400"
-
-"thefoschini.bash-store-components@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-store-components@1.0.6-beta.0/public/@types/thefoschini.bash-store-components":
-  version "1.0.6-beta.0"
-  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-store-components@1.0.6-beta.0/public/@types/thefoschini.bash-store-components#540458069c97697feae63f52752f11e2d6b14fc3"
+"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.6/public/@types/thefoschini.bash-product-context":
+  version "1.0.6"
+  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.6/public/@types/thefoschini.bash-product-context#8dc6c177461d6d3785871054b4c7f86f95b5ccb7"
 
 throat@^5.0.0:
   version "5.0.0"
