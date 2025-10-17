@@ -61,11 +61,6 @@ function ProductDescription(props: PropsWithChildren<Props>) {
   const bashProductContext = useBashProduct() as any
   const product = bashProductContext?.product || productContext?.product
 
-  console.log('🚀 BASH PRODUCT DESCRIPTION - Debug Info')
-  console.log('BashProductContext:', bashProductContext)
-  console.log('Product:', product)
-  console.log('Description:', product?.description)
-
   const description = props.description ?? product?.description
 
   if (!description) {

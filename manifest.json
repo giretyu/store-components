@@ -1,7 +1,7 @@
 {
   "vendor": "thefoschini",
   "name": "bash-store-components",
-  "version": "1.0.6-beta.0",
+  "version": "1.0.6",
   "title": "Bash Store Components",
   "defaultLocale": "pt-BR",
   "description": "The VTEX store components for that render apps can use",
@@ -25,7 +25,7 @@
     "vtex.order-manager": "0.x",
     "vtex.order-shipping": "0.x",
     "vtex.pixel-manager": "1.x",
-    "thefoschini.bash-product-context": "1.0.5-beta.0",
+    "thefoschini.bash-product-context": "1.x",
     "vtex.react-portal": "0.x",
     "vtex.responsive-values": "0.x",
     "vtex.rich-text": "0.x",

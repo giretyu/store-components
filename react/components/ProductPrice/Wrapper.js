@@ -55,10 +55,6 @@ const ProductPriceWrapper = ({
   
   // Use bash context if available
   const contextToUse = bashProductContext || valuesFromContext
-  
-  console.log('🚀 BASH PRODUCT PRICE - Debug Info')
-  console.log('BashProductContext:', bashProductContext)
-  console.log('Context to use:', contextToUse)
 
   const commercialOffer = useCommercialOffer(contextToUse)
 

@@ -5072,9 +5072,13 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.5-beta.0/public/@types/thefoschini.bash-product-context":
-  version "1.0.5-beta.0"
-  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.5-beta.0/public/@types/thefoschini.bash-product-context#88c5d783726462844ae168fadc80726ae69659cf"
+"thefoschini.bash-product-context@https://pdptesting--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.5+build1760662431/public/@types/thefoschini.bash-product-context":
+  version "1.0.5"
+  resolved "https://pdptesting--thefoschini.myvtex.com/_v/private/typings/linked/v1/thefoschini.bash-product-context@1.0.5+build1760662431/public/@types/thefoschini.bash-product-context#a2dfa883fa90a87b29c81ae7f79800696d8c7400"
+
+"thefoschini.bash-store-components@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-store-components@1.0.6-beta.0/public/@types/thefoschini.bash-store-components":
+  version "1.0.6-beta.0"
+  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-store-components@1.0.6-beta.0/public/@types/thefoschini.bash-store-components#540458069c97697feae63f52752f11e2d6b14fc3"
 
 throat@^5.0.0:
   version "5.0.0"
@@ -5296,13 +5300,13 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-"vtex.address-form@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.address-form@4.26.9/public/@types/vtex.address-form":
-  version "4.26.9"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.address-form@4.26.9/public/@types/vtex.address-form#10497d0053c8d2233ed5073cd52bc34b6aa6d79d"
+"vtex.address-form@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.address-form@4.27.0/public/@types/vtex.address-form":
+  version "4.27.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.address-form@4.27.0/public/@types/vtex.address-form#9e9d3992dd98aa2fbfdac347f9454876a02fb436"
 
-"vtex.apps-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@3.17.5/public/@types/vtex.apps-graphql":
-  version "3.17.5"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@3.17.5/public/@types/vtex.apps-graphql#9b4f2537ccca7c6966546d04e23da24a52b6a4b8"
+"vtex.apps-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@3.18.0/public/@types/vtex.apps-graphql":
+  version "3.18.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@3.18.0/public/@types/vtex.apps-graphql#4e1c3678d5472b5cdca134d893e1c52b143df114"
 
 "vtex.checkout-resources@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-resources@0.50.1/public/@types/vtex.checkout-resources":
   version "0.50.1"

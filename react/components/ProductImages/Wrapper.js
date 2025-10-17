@@ -15,12 +15,6 @@ const ProductImagesWrapper = props => {
   // Use bash context if available, otherwise fall back to regular context
   const { selectedItem, skuSelector, product } = bashProductContext || valuesFromContext
   
-  console.log('🚀 BASH PRODUCT IMAGES - Debug Info')
-  console.log('BashProductContext:', bashProductContext)
-  console.log('Product:', product)
-  console.log('SelectedItem:', selectedItem)
-  console.log('SelectedItem images:', selectedItem?.images)
-  
   const {
     aspectRatio,
     maxHeight,

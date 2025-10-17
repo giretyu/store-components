@@ -7,7 +7,7 @@ interface BashProductDataProviderProps {
   children: React.ReactNode
 }
 
-const API_BASE_URL = 'https://be1160c66d5b.ngrok-free.app'
+const API_BASE_URL = 'https://web-api.bash.com'
 
 /**
  * Extract product slug from URL path
@@ -45,23 +45,11 @@ const BashProductDataProvider: FC<BashProductDataProviderProps> = ({ children })
     return null
   }, [query?.slug, route?.path, route?.params?.slug])
 
-  // Enable debug mode with ?debug=true
-  const isDebugMode = query?.debug === 'true' || query?.debug === '1'
-
-  if (isDebugMode) {
-    console.log('🚀 BASH PRODUCT DATA PROVIDER [DEBUG]:')
-    console.log('  - Query:', query)
-    console.log('  - Route:', route)
-    console.log('  - Extracted slug:', productSlug)
-    console.log('  - API URL:', API_BASE_URL)
-  }
-
   return (
     <BashProductContextProvider 
       productSlug={productSlug}
       apiBaseUrl={API_BASE_URL}
       query={query}
-      debug={isDebugMode}
     >
       {children}
     </BashProductContextProvider>

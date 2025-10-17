@@ -25,11 +25,6 @@ const BashProductInstallments: FC<BashProductInstallmentsProps> = ({
   const selectedItem = productContext?.selectedItem
   const installments = selectedItem?.sellers?.[0]?.commertialOffer?.Installments
 
-  console.log('🚀 BASH PRODUCT INSTALLMENTS - Debug Info')
-  console.log('ProductContext:', productContext)
-  console.log('SelectedItem:', selectedItem)
-  console.log('Installments:', installments)
-
   if (!installments || installments.length === 0) {
     return null
   }
