@@ -5072,9 +5072,9 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.8/public/@types/thefoschini.bash-product-context":
-  version "1.0.8"
-  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.8/public/@types/thefoschini.bash-product-context#c7214d0543dea4b6999ec8387ead588f5097f904"
+"thefoschini.bash-product-context@http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.9/public/@types/thefoschini.bash-product-context":
+  version "1.0.9"
+  resolved "http://thefoschini.vtexassets.com/_v/public/typings/v1/thefoschini.bash-product-context@1.0.9/public/@types/thefoschini.bash-product-context#6ab3a05996d8559cd14ccef9335302fdb1a8ab3e"
 
 throat@^5.0.0:
   version "5.0.0"
@@ -5379,6 +5379,10 @@ validate-npm-package-license@^3.0.1:
 "vtex.store-icons@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons":
   version "0.18.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons#0ee94d549aa283ce3a13ab987c13eac4fdfd1bba"
+
+"vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.23.1/public/@types/vtex.store-image":
+  version "0.23.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.23.1/public/@types/vtex.store-image#057991d97102568bcd7b1dadfd11e5e8ae6f2d98"
 
 "vtex.store-resources@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-resources@0.104.2/public/@types/vtex.store-resources":
   version "0.104.2"
